@@ -9,8 +9,11 @@ import robotsTxt from 'astro-robots-txt';
 
 import icon from 'astro-icon';
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://pogorskii.com',
-    integrations: [mdx(), sitemap(), tailwind(), robotsTxt(), icon()],
+  site: 'https://pogorskii.com',
+  integrations: [mdx(), sitemap(), tailwind(), robotsTxt(), icon()],
+  adapter: netlify(),
 });
