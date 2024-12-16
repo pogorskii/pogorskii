@@ -3,6 +3,8 @@ title: 'Hello there!'
 description: '...general Kenobi? Nope, just the first post in my soon-to-be-awesome personal blog!'
 pubDate: 'May 28 2024'
 heroImage: '/thumbnails/stas-poses-awkwardly.png'
+tags:
+  - 'personal'
 ---
 
 Is this thing on? Nope, I'm not being corny (or do I?), rather, I'm excited to see this thing ("thing" being my personal blog) finally go live. Sure, it will look pretty bare bones at first, but that's not the point. I've been a professional (meaning, employed) dev for only a few months, but I already know the important thing: you have to ship stuff. Not just buy domains, start yet another local project, and repeat.
