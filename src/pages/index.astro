@@ -2,48 +2,44 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body class="flex h-dvh flex-col">
-		<Header />
-		<main class="grow">
-			<h1>Hey, you're special!</h1>
-			<p>
-				Because you're one of the first people to not only see my blog, but also see it being in active development.
-			</p>
-			<p>
-				while I'm hard at work (or hardly working, you're to judge) on this blog, you can check out my <a href="/about">about page</a> to learn more about me.
-			</p>
-			<p>And here's a roadmap of sorts to list what you can expect to see here (eventually) (soon-ish):</p>
-			<ul class="list-disc ml-6 mb-6">
-				<li>Concise, authentic posts in general</li>
-				<li>Insights about me figuring out ambitious pet projects</li>
-				<li>Breakdowns of stuff I find fascinating and/or valuable</li>
-				<li>Occasional rants about video games, TV shows, and stuff</li>
-				<li>Life updates (maybe?)</li>
-			</ul>
-			<p>Anyways, this is supposed to be just a short blurb-placeholder, but I didn't want to just generate some AI greeting, so here's that.</p>
-			<p>Thanks for stopping by, and see ya in a bit!</p>
-			<p>P.S. Damn, Astro is fast to develop with!</p>
-			<p>P.P.S. Which is unfortunate, because now I have no excuses to delay developing this site further :)</p>
-		</main>
-		<Footer />
-	</body>
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+</head>
+<body class="flex h-dvh flex-col bg-pogorskii-black">
+<Header/>
+<main class="grow">
+    <h1>Hey, you're special!</h1>
+    <p>
+        Because you're one of the first people to not only see my blog, but also see it being in active development.
+    </p>
+    <p>
+        while I'm hard at work (or hardly working, you're to judge) on this blog, you can check out my <a href="/about">about
+                                                                                                                        page</a>
+        to learn more about me.
+    </p>
+    <p>And here's a roadmap of sorts to list what you can expect to see here (eventually) (soon-ish):</p>
+    <ul class="list-disc ml-6 mb-6">
+        <li>Concise, authentic posts in general</li>
+        <li>Insights about me figuring out ambitious pet projects</li>
+        <li>Breakdowns of stuff I find fascinating and/or valuable</li>
+        <li>Occasional rants about video games, TV shows, and stuff</li>
+        <li>Life updates (maybe?)</li>
+    </ul>
+    <p>Anyways, this is supposed to be just a short blurb-placeholder, but I didn't want to just generate some AI greeting, so here's that.</p>
+    <p>Thanks for stopping by, and see ya in a bit!</p>
+    <p>P.S. Damn, Astro is fast to develop with!</p>
+    <p>P.P.S. Which is unfortunate, because now I have no excuses to delay developing this site further :)</p>
+</main>
+<Footer/>
+</body>
 </html>
 <style>
-	body {
-		background: var(--black);
-	}
-	main {
-		padding: 2em 1em;
-	}
-	p {
-		@apply prose;
-	}
+    p {
+        @apply prose;
+    }
 </style>
