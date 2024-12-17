@@ -10,36 +10,55 @@ import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
 <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
 </head>
-<body class="flex h-dvh flex-col bg-pogorskii-black">
+<body class="flex flex-col bg-pogorskii-black text-pogorskii-white">
 <Header/>
-<main class="grow">
-    <h1>Hey, you're special!</h1>
-    <p>
-        Because you're one of the first people to not only see my blog, but also see it being in active development.
-    </p>
-    <p>
-        while I'm hard at work (or hardly working, you're to judge) on this blog, you can check out my <a href="/about">about
-                                                                                                                        page</a>
-        to learn more about me.
-    </p>
-    <p>And here's a roadmap of sorts to list what you can expect to see here (eventually) (soon-ish):</p>
-    <ul class="list-disc ml-6 mb-6">
-        <li>Concise, authentic posts in general</li>
-        <li>Insights about me figuring out ambitious pet projects</li>
-        <li>Breakdowns of stuff I find fascinating and/or valuable</li>
-        <li>Occasional rants about video games, TV shows, and stuff</li>
-        <li>Life updates (maybe?)</li>
-    </ul>
-    <p>Anyways, this is supposed to be just a short blurb-placeholder, but I didn't want to just generate some AI greeting, so here's that.</p>
-    <p>Thanks for stopping by, and see ya in a bit!</p>
-    <p>P.S. Damn, Astro is fast to develop with!</p>
-    <p>P.P.S. Which is unfortunate, because now I have no excuses to delay developing this site further :)</p>
+<main class="container !h-auto grow px-3 lg:px-8 pt-24 pb-12">
+    <section class="text-center mb-8" id="into">
+        <h1 class="text-4xl font-bold mb-4">👋 Hi, I'm Stas Pogorskii</h1>
+        <div class="flex justify-center gap-2">
+            {['Full-stack developer', '3D/Visual developer', 'Gamer'].map((tag, i) => (
+                    <div :key={i} class="px-2 py-0.5 text-pogorskii-black font-bold bg-pogorskii-green rounded-md">
+                        {tag}
+                    </div>
+            ))}
+        </div>
+    </section>
+    <section class="prose max-w-xl mx-auto mb-8">
+        <p>Welcome to my personal platform, where I'm not afraid to be so authentic that it hurts. I believe that web (and tech in general) should be mighty progressive, experimental, visionary, and fun.</p>
+        <p>And so does my personal brand.</p>
+        <p>So instead of being all "professional", I'll do my best to keep things exciting and unconventional.</p>
+    </section>
+    <section class="prose max-w-xl mx-auto mb-8">
+        <p>I miss times, when we did stuff like this unironically, and without it being "cringe":</p>
+        <img src="/public/epic-laravel-banner.jpg" alt="Epic 'I love Laravel' oldschool banner" class="my-2"/>
+        <p>You bet I've just done that epic signature from scratch to prove a point, because here, we go <span
+                class="font-bold">hard</span>!
+        </p>
+        <p>So, in short, lets make web fun again. And I'll start with myself.</p>
+    </section>
+    <section class="prose border max-w-xl mx-auto rounded-lg px-4 pt-2 pb-6 border-pogorskii-green">
+        <h2 class="text-2xl text-pogorskii-white font-bold border-b-4 mb-4 border-pogorskii-yellow w-fit">You're the
+                                                                                                          chosen
+                                                                                                          one</h2>
+        <p>
+            Because you're one of the first people to see my blog in the most bare form (how scandalous).
+        </p>
+        <p>And don't you go "Who cares", because I do!</p>
+        <p>And here's what you can expect to see here (eventually) (soon-ish):</p>
+        <ul>
+            <li>Concise, authentic posts in general</li>
+            <li>Insights about me figuring out ambitious pet projects</li>
+            <li>Breakdowns of stuff I find fascinating and/or valuable</li>
+            <li>Occasional rants about video games, TV shows, and stuff</li>
+            <li>Life updates (maybe?)</li>
+            <li>I don't know, whatever I feel like at the time</li>
+        </ul>
+        <p>Anyways, this is supposed to be just a short blurb-placeholder, but I didn't want to just generate some AI greeting, so here's that.</p>
+        <p>Thanks for stopping by, and see ya in a bit!</p>
+        <p>P.S. Damn, Astro is fast to develop with!</p>
+        <p>P.P.S. Which is unfortunate, because now I have no excuses to delay developing this site further :)</p>
+    </section>
 </main>
 <Footer/>
 </body>
 </html>
-<style>
-    p {
-        @apply prose;
-    }
-</style>

@@ -4,6 +4,14 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply max-w-5xl w-full h-dvh mx-auto px-1 md:px-3;
+}
+
 :root {
     /* Custom*/
     --black: #001122;
@@ -40,16 +48,9 @@
     font-display: swap;
 }
 
-body {
-    color: var(--white);
-}
-
 a {
-    color: var(--green);
-}
-
-a:hover {
-    color: var(--accent);
+    transition: color 0.2s;
+    @apply !no-underline;
 }
 
 .sr-only {
