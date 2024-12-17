@@ -2,6 +2,8 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import {Image} from 'astro:assets';
+import LaravelBanner from '../images/epic-laravel-banner.jpg';
 import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
 ---
 
@@ -30,16 +32,16 @@ import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
     </section>
     <section class="prose max-w-xl mx-auto mb-8">
         <p>I miss times, when we did stuff like this unironically, and without it being "cringe":</p>
-        <img src="/public/epic-laravel-banner.jpg" alt="Epic 'I love Laravel' oldschool banner" class="my-2"/>
+        <Image src={LaravelBanner} alt="Epic 'I love Laravel' oldschool banner" class="my-2"/>
         <p>You bet I've just done that epic signature from scratch to prove a point, because here, we go <span
                 class="font-bold">hard</span>!
         </p>
         <p>So, in short, lets make web fun again. And I'll start with myself.</p>
     </section>
     <section class="prose border max-w-xl mx-auto rounded-lg px-4 pt-2 pb-6 border-pogorskii-green">
-        <h2 class="text-2xl text-pogorskii-white font-bold border-b-4 mb-4 border-pogorskii-yellow w-fit">You're the
-                                                                                                          chosen
-                                                                                                          one</h2>
+        <h2 class="text-2xl text-pogorskii-white font-bold border-b-4 mb-4 border-pogorskii-yellow w-fit">
+            You're the chosen one
+        </h2>
         <p>
             Because you're one of the first people to see my blog in the most bare form (how scandalous).
         </p>
